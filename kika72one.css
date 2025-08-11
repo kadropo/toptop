@@ -1,0 +1,662 @@
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.clear{
+	clear: both;
+}
+body{
+	background: #000 url('https://images2.imgbox.com/44/16/c6zjylvr_o.png') no-repeat !important; 
+  	background-attachment: fixed !important;
+}
+div.container{
+	width: 986px;;
+	margin: 0 auto;
+	position: relative;
+	background: #fff;
+  	padding: 13px 0;
+  	border-top-left-radius: 10px;
+  	border-top-right-radius: 10px;
+}
+div.livetv_item{
+	position: relative;
+	display: inline-block;
+	margin: 0 0 15px 14px;
+}
+div.livetv_item a{
+	width: 224px;
+	height: 150px;
+	overflow: hidden;
+	border: 1px solid #e0e0e0;
+	display: block;
+	text-decoration: none;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+div.livetv_item a:hover div.tv_item_grid_hover{
+	display: block;
+}
+div.tv_logo{
+	width: 80px;
+	height: 80px;
+	margin: 25px auto 15px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+div.tv_title{
+	color: #646464;
+	text-shadow: 0 1px 0 rgba(100,100,100,0.3);
+	font-size: 11px;
+	text-align: center;
+	height: 26px;
+	overflow: hidden;
+	font-family: Arial;
+}
+div.tv_item_grid_hover{
+	display: none;
+	background: #b80d09;
+	height: 3px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+div.tv_title span{
+	display: block;
+}
+div.live_tv{
+	width: 790px;
+    height: 545px;
+	background-image: url('img/tv.png');
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 0px auto 0px;
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background-color: #D8D8D8;
+    
+}
+::-webkit-scrollbar-thumb {
+    background-color: #3d4b90;
+}
+::-webkit-scrollbar-thumb:hover {
+	background-color: #510301;
+} 
+div.channels{
+	width: 185px;
+	height: 512px;
+	float: right;
+	overflow: auto;
+}
+div.channels ul li a{
+	position: relative;
+	display: block;
+}
+ul, li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+div.channels ul li a span.live_btn{
+	position: absolute;
+  	font-size: 9px;
+  	color: white;
+  	right: 6px;
+  	top: 17px;
+  	background: rgb(2, 171, 43);
+  	padding: 1px 2px;
+  	border-radius: 3px;
+  	font-family: Arial;
+  	text-shadow: 1px 1px 1px #121212;
+  	-webkit-animation-name: blinker;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: blinker;
+  -moz-animation-duration: 3s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+  animation-name: blinker;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+div.channel{
+	width: 40px;
+  	height: 40px;
+	background-size: 100% 100%;
+	background-position: center center;
+}
+
+div.channels ul li a span.chanel_title{
+	font-family: Arial;
+	font-size: 18px;
+	margin-left: 5px;
+	color: #A7B0AD;
+	text-shadow: 2px 1px 5px #3D4B90;
+	margin-top: 10px;
+	width: 123px;
+  	height: 22px;
+  	overflow: hidden;
+}
+div.channels ul li a{
+	padding: 3px 0;
+}
+div.channels ul li a:hover div.channel{
+	background-size: 115% 115%;
+}
+a.home_btn{
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: -55px;
+	background: url('img/home.png') no-repeat;
+	width: 50px;
+	height: 50px;
+	background-position: center center;
+	background-size: 100% 100%;
+}
+a.fullscreen_btn{
+	display: block;
+	position: absolute;
+  	background: url('img/fullscreenicon.png') no-repeat;
+  	top: 62px;
+  	width: 40px;
+  	height: 33px;
+  	background-position: center center;
+  	background-size: 100% 100%;
+  	left: -50px;
+}
+div.top_ad{
+	padding: 0 14px 10px 14px;
+}
+div.ad_left{
+	float: left;
+	position: absolute;
+	left: -160px; 
+	margin-top: 60px;
+}
+div.ad_right{
+	float: right;
+	position: absolute;
+	right: -160px; 
+	margin-top: 60px;
+}
+div.live_bottom_ad{
+	padding-bottom: 5px;
+}
+/* Footer */
+
+div.footer{
+	margin: 14px;
+	border: 1px solid #e0e0e0;
+	padding: 15px;
+	font-family: Arial;
+	font-size: 12px;
+	line-height: 15px;
+	color: #646464;
+	text-shadow: 0 1px 0 rgba(100,100,100,0.3);
+}
+div.footer div.footer_bottom{
+	margin-top: 10px;
+}
+div.footer div.footer_bottom span,
+div.footer div.footer_bottom a{
+	font-size: 10px;
+  	color: #ABA0A0;
+}
+div.live_page_footer{
+	margin: 0;
+	background: #FFF;
+	opacity: 0.8;
+}
+#tv_box,
+#tv_box_android{
+	padding: 14px 12px 0px 12px;
+	width: 766px;
+	height: 479px;
+}
+
+.fb-comments, 
+.fb-comments iframe[style], 
+.fb-like-box, 
+.fb-like-box iframe[style] {
+	width: 100% !important;
+}
+.fb-comments span, 
+.fb-comments iframe span[style], 
+.fb-like-box span, 
+.fb-like-box iframe span[style] {
+	width: 100% !important;
+}
+.fb-comments{
+	opacity: 0.9;
+	background-color: #ffffff80;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+	
+}
+.online_btn{
+  position: absolute;
+  /* width: 10px; */
+  /* height: 10px; */
+  font-size: 9px;
+  font-weight: bold;
+  top: 5px;
+  color: rgb(15, 169, 15);
+  font-family: Arial;
+  right: 4px;
+  text-transform: uppercase;
+  /* background: rgb(9, 187, 9); */
+  /* border-radius: 50%; */
+	-webkit-animation-name: blinker;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	
+	-moz-animation-name: blinker;
+	-moz-animation-duration: 2s;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+    
+    animation-name: blinker;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.quality_green{
+ position: absolute;
+  font-size: 9px;
+  font-weight: bold;
+  top: 5px;
+  color: rgb(15, 169, 15);
+  font-family: Arial;
+  right: 4px;
+  text-transform: uppercase;
+}
+.quality_yellow{
+ position: absolute;
+  font-size: 9px;
+  font-weight: bold;
+  top: 5px;
+  color: rgb(245, 225, 16);
+  font-family: Arial;
+  right: 4px;
+  text-transform: uppercase;
+}
+.quality_red{
+ position: absolute;
+  font-size: 9px;
+  font-weight: bold;
+  top: 5px;
+  color: rgb(255, 10, 10);
+  font-family: Arial;
+  right: 4px;
+  text-transform: uppercase;
+}
+
+@-moz-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+.logoff_btn{
+  display: block;
+  position: absolute;
+  top: 9px;
+  right: -53px;
+  background: url('img/logoff.png') no-repeat;
+  width: 45px;
+  height: 45px;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+.menu{
+	
+}
+.menu ul li{
+	float: left;
+}
+.menu ul li a{
+  display: block;
+  padding: 5px 10px;
+  color: #fff;
+  text-decoration: none;
+  font-family: Arial;
+  font-size: 17px;
+  text-shadow: 1px 0px 6px #4f4f4f;
+  margin-right: 15px;
+  border-bottom: 2px solid #b80d09;
+  font-weight: bold;
+  margin-left: 20px;
+	margin-bottom: 20px;
+}
+.menu ul li a:hover{
+	text-shadow: 1px 0px 9px #4f4f4f;
+	border-bottom: 3px solid #b80d09;
+	margin-bottom: 19px;
+}
+.right_ad{
+	position: absolute;
+	right: -162px;
+  	top: 12px;
+}
+.left_ad{
+	position: absolute;
+	left: -162px;
+  	top: 12px;
+}
+.not_channel{
+	margin-top: 60px;
+}
+.jw-slider-horizontal,
+.jw-text-elapsed,
+.jw-text-duration{
+	display: none !important;
+}
+
+#install-flash,
+.install-flash-div{
+	text-align: center;
+	position: relative;
+	top: 40%;
+}
+#install-flash a,
+.install-flash-div a{
+	position: relative;
+    vertical-align: top;
+    width: 50%;
+    margin: auto;
+	font-size: 22px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    background: #E91E63;
+    border: 0;
+    border-bottom: 3px solid #bd0443;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #bd0443;
+    box-shadow: inset 0 -2px #bd0443;
+    display: block;
+    text-decoration: none;
+    padding: 15px 5px;
+}
+#install-flash a:hover,
+.install-flash-div a:hover{
+	top: 1px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #fff;
+    background: #e60753;
+    border-bottom: 3px solid #9c0337;
+}
+#install-flash a:focus,
+.install-flash-div a:focus{
+	top: 3px;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #fff;
+}
+
+.plyr,
+.plyr__video-wrapper,
+#player{
+	width: 100% !important;
+	height: 100% !important;
+}
+video {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: fill !important;
+}
+div.more_channel_list div.livetv_item a {
+    width: 68px;
+    height: 130px;
+}
+.more_channel_list{
+	background: #ffffff;
+    padding: 15px 0px 0px 0px;
+}
+div.footer span.right a{
+	font-size: 16px;
+    text-transform: uppercase;
+}
+
+/* hide bar line */
+.bar-container{
+	display: none !important;
+}
+
+#preroll-counter{
+	color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    position: absolute;
+    bottom: 20px;
+    right: 29px;
+    z-index: 1;
+}
+#tv_box{
+	position: relative;
+	overflow: hidden;
+}
+#preroll-container{
+	display: inline;
+}
+.links{
+	font-size: 17px !important;
+}
+@media screen and (max-width: 1320px){
+	div.container{
+		width: 945px;
+		margin: 0 auto;
+	}
+	div.tv_logo{
+		height: 65px;
+		width: 65px;
+	}
+	div.livetv_item a{
+		width: 214px;
+		height: 140px;
+	}
+	div.live_tv{
+		width: 755px;
+	}
+	#tv_box,
+	#tv_box_android{
+		padding: 14px 12px 0px 12px;
+		width: 732px;
+		height: 479px;
+	}
+}
+
+@media screen and (max-width: 1280px){
+	div.container{
+		width: 888px;
+	}
+	div.tv_logo{
+		height: 55px;
+		width: 55px;
+	}
+	div.livetv_item a{
+		width: 200px;
+  		height: 130px;
+	}
+	#tv_box,
+	#tv_box_android{
+		padding: 14px 12px 0px 12px;
+		width: 672px;
+		height: 479px;
+	}
+	div.live_tv {
+	  width: 694px;
+	}
+}
+
+@media screen and (max-width: 1225px){
+	div.container{
+		width: 800px;
+	}
+	div.tv_logo{
+		height: 50px;
+		width: 50px;
+	}
+	div.livetv_item a{
+		width: 177px;
+  		height: 120px;
+	}
+	div.live_tv{
+		width: 610px;
+		height: 457px;
+	}
+	#tv_box,
+	#tv_box_android{
+		width: 591px;
+		height: 400px;
+		padding: 12px 7px 0px 9px;
+	}
+	div.channels{
+		height: 430px;
+	}
+	#install-flash, .install-flash-div{
+		top: 27%;
+	}
+}
+@media screen and (max-width: 1135px){
+	div.container{
+		width: 600px;
+	}
+
+	div.live_tv {
+		width: 411px;
+		height: 295px;
+	}
+	#tv_box,
+	#tv_box_android{
+		width: 399px;
+  		height: 259px;
+  		padding: 7px 0px 0px 6px;
+	}
+	div.channels {
+		height: 278px;
+	}
+	#install-flash a, .install-flash-div a{
+		font-size: 18px;
+	}
+	#install-flash, .install-flash-div{
+		top: 18%;
+	}
+}
+@media screen and (max-width: 935px){
+	div.container{
+		width: 488px;
+	}
+	div.tv_logo{
+		height: 45px;
+		width: 45px;
+	}
+	div.livetv_item a{
+		width: 139px;
+  		height: 120px;;
+	}
+	.channels ul li{
+		float: left;
+	}
+	div.channels {
+	  height: 110px;
+	  width: 100%;
+	}
+	div.channels ul li a{
+		margin: 5px;
+	}
+	div.channels ul li a span.chanel_title{
+		display: none;
+	}
+	div.live_tv {
+	  width: 488px;
+	  height: 340px;
+	}
+	#tv_box,
+	#tv_box_android{
+		width: 475px;
+	  	height: 300px;
+  		padding: 7px 0px 0px 6px;
+	}
+}
+@media screen and (max-width: 825px){
+	div.container{
+		width: 485px;
+	}
+	.adsense{
+		display: none;
+	}
+	div.live_tv {
+	  width: 488px;
+	  height: 340px;
+	}
+	#tv_box,
+	#tv_box_android {
+	  width: 475px;
+	  height: 300px;
+	}
+	.right_ad{
+		display: none;
+	}
+}
+@media screen and (max-width: 510px){
+	div.container{
+		width: 328px;
+	}
+	div.live_tv {
+	  width: 328px;
+	  height: 237px;
+	}
+	#tv_box,
+	#tv_box_android {
+	  width: 317px;
+	  height: 205px;
+	}
+	#install-flash a, .install-flash-div a{
+		font-size: 12px;
+	}
+	#install-flash, .install-flash-div{
+		top: 16%;
+	}
+}
+@media screen and (max-width: 355px){
+	div.container{
+		width: 275px;
+	}
+	div.tv_logo{
+		height: 40px;
+		width: 40px;
+	}
+	div.livetv_item a{
+		width: 112px;
+  		height: 116px;;
+	}
+}
